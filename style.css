@@ -39,7 +39,7 @@
 }
 
 #navbar_logo {
-  padding-top:12px;
+  padding-top:13px;
   padding-left:5px;
   font-size: 2.6rem;
   background: #9a8478;
@@ -422,10 +422,11 @@
     background-image: linear-gradient(to right, #9a8478 0%, #1e130c 100%);
   }
   
-  /*.fa-solid, .fa-box-open {
+  .fa-solid, .fa-screwdriver-wrench,
+  .fa-solid, .fa-box-open
+  {
     font-size: 14rem;
   }
-  */
   
   #card-2 {
     background: #9a8478;
@@ -474,17 +475,21 @@
       margin-top: 1rem;
       font-size: 1.5rem;
     }
+
   }
   
+  @media screen and (max-width: 600px) {
+  .fa-solid, .fa-screwdriver-wrench,
+  .fa-solid, .fa-box-open
+  {
+    font-size: 20vw;
+  }
+}
+
   @media screen and (max-width: 480px) {
     .main_img-card {
       width: 250px;
       height: 250px;
-    }
-  
-    .fa-users,
-    .fa-layer-group {
-      font-size: 4rem;
     }
   
     .main_content h1 {
