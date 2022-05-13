@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arashi Furtniture</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a href="index.html" id="navbar_logo">Arashi 嵐</a>
+            
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="navbar_menu">
+
+                <li class="navbar_item">
+                    <a href="index.html" class="navbar_links" id="home-page">Home</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <div class="main" id="about">
+
+        <div class="home_container">
+          <div class="main_content">
+
+            <h1>Contact Us</h1>
+            <h2>Ask us for a quote or general inquiries about our products</h2>
+            <p>We will get back to you within 24 hours.</p>
+
+            <div class="form">
+
+              <input class="name" type="text" placeholder="Name" />
+              <input class="email" type="text" placeholder="Email" />
+              <textarea class="msg" cols="5" rows = "5" placeholder="Your message"></textarea>
+
+            </div>
+
+            <button type="submit" class="main_btn"><a style="color:white">Send</a></button>
+
+          </div>
+        </div>
+        
+      </div>
+  
+      <!-- Footer Section -->
+      <div class="footer_container">
+        <div class="footer_links">
+          <div class="footer_link-wrapper">
+            <div class="footer_link-items">
+              <h2>Main1</h2>
+              <a href="/sign_up">Text1</a>
+              <a href="/">Text2</a>
+              <a href="/">Text3</a>
+              <a href="/">Text4</a>
+            </div>
+            <div class="footer_link-items">
+              <h2>Main2</h2>
+              <a href="/">Text1</a>
+              <a href="/">Text2</a>
+              <a href="/">Text3</a>
+              <a href="/">Text4</a>
+            </div>
+          </div>
+          <div class="footer_link-wrapper">
+            <div class="footer_link-items">
+              <h2>Main3</h2>
+              <a href="/">Text1</a>
+              <a href="/">Text2</a>
+              <a href="/">Text3</a>
+              <a href="/">Text4</a>
+            </div>
+            <div class="footer_link-items">
+              <h2>Socials</h2>
+              <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+              <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+              <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+              <a href="https://www.twitter.com/" target="_blank">Twitter</a>
+            </div>
+          </div>
+        </div>
+        <section class="social_media">
+          <div class="social_media-wrap">
+            <div class="footer_logo">
+              <a href="/" id="footer_logo">Arashi 嵐</a>
+            </div>
+            <p class="website_rights">© Arashi Furniture. 2022 All rights reserved</p>
+            <div class="social_icons">
+              <a href="/" class="social_icon-link" target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="/" class="social_icon-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="/" class="social_icon-link"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a href="/" class="social_icon-link"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="/" class="social_icon-link"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <script src="app.js"></script>
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+      <script>
+
+      const form  = document.querySelector('.contact_form');
+
+      function sendMsg(e) {
+        e.preventDefault();
+
+            const name  = document.querySelector('.name'),
+                  email = document.querySelector('.email'),
+                  msg   = document.querySelector('.msg');
+
+      Email.send({
+      SecureToken : "1582c3eb-9d00-4b0f-95ab-b34b4eabf9bd",
+      To : 'nyeahehh112@gmail.com',
+      From : email.value,
+      Subject : "Contact Form",
+      Body : msg.value
+      }).then(
+        message => alert(message)
+      );
+
+      }
+
+      form.addEventListener('submit', sendMsg);
+
+      </script>
+
+</body>
+</html>

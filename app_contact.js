@@ -1,5 +1,3 @@
-// MENU BAR SECTION //
-
 const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.navbar_menu');
 const navLogo = document.querySelector('#navbar_logo');
@@ -48,10 +46,7 @@ const highlightMenu = () => {
   }
 
   if ((elem && window.innerWIdth < 960 && scrollPos < 600) || elem) {
-    galleryMenu.classList.remove('highlight');
-    homeMenu.classList.remove('highlight');
-    aboutMenu.classList.remove('highlight');
-    contactMenu.classList.add('highlight');
+    elem.classList.remove('highlight');
   }
 };
 
@@ -69,3 +64,6 @@ const hideMobileMenu = () => {
 
 menuLinks.addEventListener('click', hideMobileMenu);
 navLogo.addEventListener('click', hideMobileMenu);
+
+// CONTACT US FORM SECTION //
+
