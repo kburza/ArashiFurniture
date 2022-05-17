@@ -29,19 +29,18 @@
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
-    /*padding: 0 50px;*/
     padding-left: 1.8rem;
     padding-right: 0.9rem;
-    /*
-    padding-left: 2.7rem;
-    padding-right: 0.9rem;
-    */
 }
 
 #navbar_logo {
-  padding-top:13px;
-  padding-left:5px;
-  font-size: 2.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  height: 100%;
+  font-size: 2.1rem;
+
   background: #9a8478;
   background: -webkit-linear-gradient(
     to bottom,
@@ -58,19 +57,6 @@
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  
-    /*  
-    background: #1e130c;
-    background: linear-gradient(to bottom, #9a8478, #1e130c);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    font-size: 2.3rem;
-    */
 }
   
 .navbar_menu {
@@ -91,7 +77,6 @@
     width: 125px;
     text-decoration: none;
     height: 100%;
-    transition: all 0.3s ease;
 }
 
 .navbar_btn {
@@ -375,7 +360,6 @@
     margin-top: 2rem;
     cursor: pointer;
     position: relative;
-    transition: all 0.35s;
     outline: none;
   }
   
@@ -633,7 +617,7 @@
 
   .footer_container {
     background-color: #f4e6d7;
-    padding: 1.8rem 0;
+    padding: 2rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -678,7 +662,7 @@
   .footer_link-items a {
     color: #1e130c;
     text-decoration: none;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0rem;
     transition: 0.3 ease-out;
   }
   
@@ -703,7 +687,7 @@
     align-items: center;
     width: 90%;
     max-width: 1000px;
-    margin: 40px auto 0 auto;
+    margin: 7px auto 0 auto;
   }
   
   .social_icons {
@@ -782,4 +766,77 @@
     padding-left: auto;
     padding-right: auto;
     width: 100%;
+  }
+
+  /* Fade-In Effect (Intersection-Observers) */
+
+  .fade-in_static {
+  animation: fadeIn linear 1s;
+  -webkit-animation: fadeIn linear 1s;
+  -moz-animation: fadeIn linear 1s;
+  -o-animation: fadeIn linear 1s;
+  -ms-animation: fadeIn linear 1s;
+  }
+
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+/* A bunch of fade-in shit */
+
+  .fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+  }
+  
+  .fade-in.appear {
+    opacity: 1;
+  }
+
+  .fade-in1 {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+  }
+  
+  .fade-in1.appear {
+    opacity: 1;
+  }
+
+  .fade-in2 {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+  }
+  
+  .fade-in2.appear {
+    opacity: 1;
+  }
+
+  .fade-in3 {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+  }
+  
+  .fade-in3.appear {
+    opacity: 1;
   }

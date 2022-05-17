@@ -7,6 +7,8 @@ const navLogo = document.querySelector('#navbar_logo');
 const faders = document.querySelector(".fade-in");
 const faders1 = document.querySelector(".fade-in1");
 const faders2 = document.querySelector(".fade-in2");
+const faders3 = document.querySelector(".fade-in3");
+const faders4 = document.querySelector(".fade-in4");
 
 // Display Mobile Menu
 const mobileMenu = () => {
@@ -24,46 +26,49 @@ const highlightMenu = () => {
   const galleryMenu = document.querySelector('#gallery-page');
   const contactMenu = document.querySelector('#contact-page');
   let scrollPos = window.scrollY;
-  console.log(scrollPos);
+  //console.log(scrollPos);
 
   // adds 'highlight' class to my menu items
-  if (window.innerWidth > 960 && scrollPos < 690) {
+  if (window.innerWidth > 960 && scrollPos < 600) {
     homeMenu.classList.add('highlight');
     aboutMenu.classList.remove('highlight');
+    faders.classList.add("appear");
     return;
-  } else if (window.innerWidth > 960 && scrollPos < 1910) {
+  } else if (window.innerWidth > 960 && scrollPos < 1400) {
     aboutMenu.classList.add('highlight');
     homeMenu.classList.remove('highlight');
     galleryMenu.classList.remove('highlight');
     contactMenu.classList.remove('highlight');
-
-    faders.classList.add("appear");
+    faders1.classList.add("appear");
+    const faders = document.querySelector(".fade-in");
     return;
-  } else if (window.innerWidth > 960 && scrollPos < 3220) {
+  } else if (window.innerWidth > 960 && scrollPos < 2300) {
     galleryMenu.classList.add('highlight');
     homeMenu.classList.remove('highlight');
     aboutMenu.classList.remove('highlight');
     contactMenu.classList.remove('highlight');
-
-    faders1.classList.add("appear");
-    const faders = document.querySelector(".fade-in1");
+    faders2.classList.add("appear");
+    const faders1 = document.querySelector(".fade-in1");
     return;
-  } else if (window.innerWidth > 960 && scrollPos < 3450) {
-    contactMenu.classList.add('highlight');
+  } else if (window.innerWidth > 960 && scrollPos < 3200) {
     galleryMenu.classList.remove('highlight');
     homeMenu.classList.remove('highlight');
     aboutMenu.classList.remove('highlight');
-
-    faders2.classList.add("appear");
-    const faders1 = document.querySelector(".fade-in2");
+    contactMenu.classList.add('highlight');
+    faders3.classList.add("appear");
+    const faders2 = document.querySelector(".fade-in2");
     return;
+    /* for fade-in effects */
+    else if(window.innerWidth > 960 && scrollPos < 1600) {
+
+    }
   }
 
   if ((elem && window.innerWIdth < 960 && scrollPos < 600) || elem) {
     galleryMenu.classList.remove('highlight');
     homeMenu.classList.remove('highlight');
     aboutMenu.classList.remove('highlight');
-    contactMenu.classList.remove('highlight');
+    contactMenu.classList.add('highlight');
   }
 };
 
