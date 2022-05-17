@@ -143,7 +143,7 @@
     }
   
     #navbar_logo {
-      padding-left: 25px;
+      padding-left: 1rem;
     }
   
     .navbar_toggle .bar {
@@ -201,6 +201,11 @@
     #mobile-menu.is-active .bar:nth-child(3) {
       transform: translateY(-8px) rotate(-45deg);
     }
+
+    .home_heading {
+      font-size: 0.5rem;
+    }
+
   }
   
   /* Home  Section */
