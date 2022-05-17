@@ -31,29 +31,33 @@ const highlightMenu = () => {
     homeMenu.classList.add('highlight');
     aboutMenu.classList.remove('highlight');
     return;
-  } else if (window.innerWidth > 960 && scrollPos < 1400) {
-    aboutMenu.classList.add('highlight');
-    homeMenu.classList.remove('highlight');
-    galleryMenu.classList.remove('highlight');
-    contactMenu.classList.remove('highlight');
-
+  } else if (scrollPos < 1400) {
+    if(window.innerWidth > 960) {
+      aboutMenu.classList.add('highlight');
+      homeMenu.classList.remove('highlight');
+      galleryMenu.classList.remove('highlight');
+      contactMenu.classList.remove('highlight');
+    }
     faders.classList.add("appear");
     return;
-  } else if (window.innerWidth > 960 && scrollPos < 2100) {
-    galleryMenu.classList.add('highlight');
-    homeMenu.classList.remove('highlight');
-    aboutMenu.classList.remove('highlight');
-    contactMenu.classList.remove('highlight');
-
+  } else if (scrollPos < 2100) {
+    if(window.innerWidth > 960) {
+      galleryMenu.classList.add('highlight');
+      homeMenu.classList.remove('highlight');
+      aboutMenu.classList.remove('highlight');
+      contactMenu.classList.remove('highlight');
+  
+    }
     faders1.classList.add("appear");
     const faders = document.querySelector(".fade-in1");
     return;
-  } else if (window.innerWidth > 960 && scrollPos < 3450) {
-    contactMenu.classList.add('highlight');
-    galleryMenu.classList.remove('highlight');
-    homeMenu.classList.remove('highlight');
-    aboutMenu.classList.remove('highlight');
-
+  } else if (scrollPos < 3450) {
+    if(window.innerWidth > 960) {
+      contactMenu.classList.add('highlight');
+      galleryMenu.classList.remove('highlight');
+      homeMenu.classList.remove('highlight');
+      aboutMenu.classList.remove('highlight');
+    }
     faders2.classList.add("appear");
     const faders1 = document.querySelector(".fade-in2");
     return;
