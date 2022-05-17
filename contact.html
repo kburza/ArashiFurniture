@@ -38,7 +38,7 @@
         </div>
     </nav>
 
-    <!-- About Section -->
+    <!-- Form Section -->
     <div class="main" id="about">
 
         <div class="home_container">
@@ -48,15 +48,50 @@
             <h2>Ask us for a quote or general inquiries about our products</h2>
             <p>We will get back to you within 24 hours.</p>
 
-            <div class="form">
-
-              <input class="name" type="text" placeholder="Name" />
-              <input class="email" type="text" placeholder="Email" />
-              <textarea class="msg" cols="5" rows = "5" placeholder="Your message"></textarea>
-
-            </div>
+            <form action="https://formsubmit.co/4c96af950fd53d16c20277778ca6ab12" method="POST"
+            style="display: flex; flex-direction: column; width: 100%; padding-top: 4rem; padding-left: 1rem; padding-right: 1rem;">
+              <input type="text" name="Name" class="name" placeholder="Name"
+              style="padding: 1.5rem; margin-bottom: 20px; outline: none; border: none; background-color: #fcf6f2; color:#777777"
+              required/>
+              <input type="email" name="Email" class="email" placeholder="Email"
+              style="padding: 1.5rem; margin-bottom: 20px; outline: none; border: none; background-color: #fcf6f2; color:#777777"
+              required/>
+              <select name="City" placeholder="Location (GTA)..." 
+              style="padding: 1.5rem; margin-bottom: 1.5rem; outline: none; border: none; background-color: #fcf6f2; color:#777777" required>
+                <option>Location (GTA)</option>
+                <option>Ajax</option>
+                <option>Aurora</option>
+                <option>Brampton</option>
+                <option>Brock</option>
+                <option>Burlington</option>
+                <option>Caledon</option>
+                <option>Clarington</option>
+                <option>East Gwillimbury</option>
+                <option>Georgina</option>
+                <option>Halton Hills</option>
+                <option>King</option>
+                <option>Markham</option>
+                <option>Milton</option>
+                <option>Mississauga</option>
+                <option>Newmarket</option>
+                <option>Oakville</option>
+                <option>Oshawa</option>
+                <option>Pickering</option>
+                <option>Richmond Hill</option>
+                <option>Scugog</option>
+                <option>Toronto</option>
+                <option>Uxbridge</option>
+                <option>Vaughan</option>
+                <option>Whitby</option>
+                <option>Whitchurch-Stouffville</option>
+              </select>
+              <textarea name="Message" class="msg" cols="5" rows = "5" placeholder="Your message" 
+              style="padding: 1.5rem; margin-bottom: 20px; outline: none; border: none; background-color: #fcf6f2; color:#777777;" 
+              required></textarea>
 
             <button type="submit" class="main_btn"><a style="color:white">Send</a></button>
+
+            </form>
 
           </div>
         </div>
@@ -128,7 +163,7 @@
         </section>
       </div>
 
-    <script src="app.js"></script>
+    <script src="app_contact.js"></script>
     <script src="https://kit.fontawesome.com/ac91786b18.js" crossorigin="anonymous"></script>
 
 </body>
