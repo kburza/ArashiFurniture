@@ -31,7 +31,7 @@ const highlightMenu = () => {
     homeMenu.classList.add('highlight');
     aboutMenu.classList.remove('highlight');
     return;
-  } else if (window.innerWidth > 960 && scrollPos < 1910) {
+  } else if (window.innerWidth > 960 && scrollPos < 1400) {
     aboutMenu.classList.add('highlight');
     homeMenu.classList.remove('highlight');
     galleryMenu.classList.remove('highlight');
@@ -39,7 +39,7 @@ const highlightMenu = () => {
 
     faders.classList.add("appear");
     return;
-  } else if (window.innerWidth > 960 && scrollPos < 3220) {
+  } else if (window.innerWidth > 960 && scrollPos < 2100) {
     galleryMenu.classList.add('highlight');
     homeMenu.classList.remove('highlight');
     aboutMenu.classList.remove('highlight');

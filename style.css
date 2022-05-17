@@ -42,7 +42,7 @@
   font-size: 2.1rem;
 
   background: #9a8478;
-  background: -webkit-linear-gradient(
+  background: linear-gradient(
     to bottom,
     #9a8478,
     #1e130c
