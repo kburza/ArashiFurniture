@@ -34,13 +34,13 @@ const highlightMenu = () => {
     aboutMenu.classList.remove('highlight');
     contactMenu.classList.remove('highlight');
 
-    if (scrollPos < 600) {
+    if (scrollPos < 400) {
       //null
       return;
-    } else if (scrollPos < 1920) {
+    } else if (scrollPos < 1420) {
         faders.classList.add("appear");
       return;
-    } else if (scrollPos < 4165) {
+    } else if (scrollPos < 3965) {
         faders1.classList.add("appear");
         return;
     } else if (scrollPos < 20000) {

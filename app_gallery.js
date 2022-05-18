@@ -74,11 +74,11 @@ const highlightMenu = () => {
   else if(window.innerWidth >= 960) {
 
     if (scrollPos < 690) {
-      homeMenu.classList.add('highlight');
+      homeMenu.classList.remove('highlight');
       aboutMenu.classList.remove('highlight');
       return;
     } else if (scrollPos < 1540) {
-        aboutMenu.classList.add('highlight');
+        aboutMenu.classList.remove('highlight');
         homeMenu.classList.remove('highlight');
         galleryMenu.classList.remove('highlight');
         contactMenu.classList.remove('highlight');
@@ -86,7 +86,7 @@ const highlightMenu = () => {
       faders.classList.add("appear");
       return;
     } else if (scrollPos < 2100) {
-        galleryMenu.classList.add('highlight');
+        galleryMenu.classList.remove('highlight');
         homeMenu.classList.remove('highlight');
         aboutMenu.classList.remove('highlight');
         contactMenu.classList.remove('highlight');
@@ -94,7 +94,7 @@ const highlightMenu = () => {
       faders1.classList.add("appear");
       return;
     } else if (scrollPos < 3450) {
-        contactMenu.classList.add('highlight');
+        contactMenu.classList.remove('highlight');
         galleryMenu.classList.remove('highlight');
         homeMenu.classList.remove('highlight');
         aboutMenu.classList.remove('highlight');
