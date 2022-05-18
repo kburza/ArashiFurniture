@@ -30,19 +30,15 @@
             <ul class="navbar_menu">
 
                 <li class="navbar_item">
-                    <a href="#" class="navbar_links" id="home-page">Home</a>
+                    <a href="index.html" class="navbar_links" id="home-page">Home</a>
                 </li>
 
                 <li class="navbar_item">
-                    <a href="#about" class="navbar_links" id="about-page">About</a>
+                    <a href="about.html" class="navbar_links" id="about-page">About</a>
                 </li>
 
                 <li class="navbar_item">
-                    <a href="#gallery" class="navbar_links" id="gallery-page">Gallery</a>
-                </li>
-
-                <li class="navbar_item">
-                    <a href="#contact" class="navbar_links" id="contact-page">Contact</a>
+                    <a href="contact.html" class="navbar_links" id="contact-page">Contact</a>
                 </li>
 
             </ul>
@@ -50,106 +46,34 @@
         </div>
     </nav>
 
-    <!-- Home Section -->
+    <!-- Gallery Section -->
     <div class="home" id="home">
 
         <div class="home_container fade-in_static">
-            <h1 class="home_heading" h1 style="color:black">One-of-a-Kind</h1>
-            <h1 class="home_heading"><span>Artisan Tables</span></h1>
-            <p class="home_description">Contact us Today</p>
-            <button class="main_btn"><a href="contact.html">Get Quote</a></button>
-        </div>
+            <p class="home_description">Gallery</p>
+            <p style="opacity:0">.</p>
+            <p style="opacity:0">.</p>
+            <p style="opacity:0">.</p>
+            <p style="opacity:0">.</p>
 
-      </div>
-
-    <!-- About Section -->
-    <div class="main" id="about">
-
-        <div class="main_container fade-in">
-          <div class="main_img-container">
-            <div class="main_img-card">
-              <div class="imgcenter">
-                <!-- <img src="table.png" width="350" alt="Table"></img> -->
-                <i class="fa-solid fa-screwdriver-wrench"></i>
+            <div class="main-scroll-div">
+            <button class="icon" onclick="scroll_img_left()"><i class="fa fa-caret-left" aria-hidden="true"></i></button>
+              <div class="cover">
+                <div class="scroll-images">
+                  <div class="child"><img src="pic.png" alt="image"></div>
+                  <div class="child"><img src="pic.png" alt="image"></div>
+                  <div class="child"><img src="pic.png" alt="image"></div>
+                  <div class="child"><img src="pic.png" alt="image"></div>
+                  <div class="child"><img src="pic.png" alt="image"></div>
+                  <div class="child"><img src="pic.png" alt="image"></div>
+                </div>
               </div>
+              <button class="icon" onclick="scroll_img_right()"><i class="fa fa-caret-right" aria-hidden="true"></i></button>
             </div>
-          </div>
-          <div class="main_content">
-
-            <h1>About Arashi Furniture</h1>
-            <h2>We create quality artisan setpieces for your home</h2>
-            <p>Take an in-depth look at the tables we make, and wood we use.</p>
-            <button class="main_btn"><a href="about.html">Learn More</a></button>
-
-          </div>
 
         </div>
-        
-      </div>
-  
-      <!-- Gallery Section -->
-      <div class="gallery" id="gallery">
-        <div class="fade-in1">
-        <h1 style="text-align:center">Our Products</h1>
 
-        <div class="gallery_wrapper">
-
-          <a href="gallery.html" style="text-decoration:none">
-            <div class="gallery_card">
-            <h2>Coffee Tables</h2>
-            <p>For when guests come by</p>
-            <div class="gallery_btn"><button href="gallery.html">View Gallery</button></div>
-          </div>
-          </a>
-
-          <a href="gallery.html" style="text-decoration:none">
-          <div class="gallery_card">
-            <h2>Dining Tables</h2>
-            <p>Perfect for family gatherings</p>
-            <div class="gallery_btn"><button href="gallery.html">View Gallery</button></div>
-          </div>
-        </a>
-
-        <a href="gallery.html" style="text-decoration:none">
-          <div class="gallery_card">
-            <h2>Wooded China</h2>
-            <p>Expressive wooden pieces</p>
-            <div class="gallery_btn"><button href="gallery.html">View Gallery</button></div>
-          </div>
-        </a>
-
-        <a href="gallery.html" style="text-decoration:none">
-          <div class="gallery_card">
-            <h2>Artisan Pieces</h2>
-            <p>Wooden art for your home</p>
-            <div class="gallery_btn"><button  href="gallery.html">View Gallery</button></div>
-          </div>
-        </a>
-
-        </div>
-        </div>
-      </div>
-  
-      <!-- Contact Section -->
-      <div class="main" id="contact">
-        <div class="main_container fade-in2">
-          <div class="main_content">
-
-            <h1>Get a Quote</h1>
-            <h2>Order Today</h2>
-            <p>Bring wooden art into your home</p>
-            <button class="main_btn">
-              <a href="contact.html">Contact</a>
-            </button>
-
-          </div>
-          <div class="main_img-container">
-            <div class="main_img-card" id="card-2">
-              <i class="fa-solid fa-box-open"></i>
-            </div>
-          </div>
-        </div>
-      </div>
+    </div>
   
       <!-- Footer Section -->
       <div class="footer_container">
@@ -216,8 +140,19 @@
         </section>
       </div>
 
-    <script src="app.js"></script>
+    <script src="app_galery.js"></script>
     <script src="https://kit.fontawesome.com/ac91786b18.js" crossorigin="anonymous"></script>
+    
+    <script>
+      function scroll_img_left() {
+        var left = document.querySelector(".scroll-images");
+        left.scrollBy(-600, 0)
+      }
+      function scroll_img_right() {
+        var right = document.querySelector(".scroll-images");
+        right.scrollBy(600, 0)
+      }
+    </script>
 
 </body>
 </html>
