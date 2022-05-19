@@ -278,11 +278,11 @@
 
   @media screen and (max-width: 768px) {
     .home_heading {
-      font-size: 3vh;
+      font-size: 4rem;
     }
   
     .home_description {
-      font-size: 2.5vh;
+      font-size: 3rem;
     }
 
     .main_btn {
