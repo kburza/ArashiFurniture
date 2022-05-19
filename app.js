@@ -27,7 +27,7 @@ const highlightMenu = () => {
   //console.log(scrollPos);
 
   // adds 'highlight' class to my menu items
-  if(window.innerWidth < 600) {
+  if(window.innerWidth < 968) {
 
     homeMenu.classList.remove('highlight');
     galleryMenu.classList.remove('highlight');
@@ -49,6 +49,8 @@ const highlightMenu = () => {
     }
 
   }
+
+  /*
   else if(window.innerWidth < 960 && window.innerWidth >= 600) {
 
     homeMenu.classList.remove('highlight');
@@ -71,13 +73,14 @@ const highlightMenu = () => {
     }
 
   }
+  */
   else if(window.innerWidth >= 960) {
 
-    if (scrollPos < 690) {
+    if (scrollPos < 490) {
       homeMenu.classList.add('highlight');
       aboutMenu.classList.remove('highlight');
       return;
-    } else if (scrollPos < 1540) {
+    } else if (scrollPos < 1240) {
         aboutMenu.classList.add('highlight');
         homeMenu.classList.remove('highlight');
         galleryMenu.classList.remove('highlight');
@@ -85,7 +88,7 @@ const highlightMenu = () => {
 
       faders.classList.add("appear");
       return;
-    } else if (scrollPos < 2100) {
+    } else if (scrollPos < 1900) {
         galleryMenu.classList.add('highlight');
         homeMenu.classList.remove('highlight');
         aboutMenu.classList.remove('highlight');
