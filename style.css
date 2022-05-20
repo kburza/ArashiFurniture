@@ -31,6 +31,7 @@
     margin: 0 auto;
     padding-left: 1.8rem;
     padding-right: 0.9rem;
+    z-index: 999;
 }
 
 .navbar_logo {
@@ -42,12 +43,14 @@
   font-size: 1.9rem;
   height: 100%;
   padding-left: 1.3rem;
+  z-index: 999;
 }
 
 .navbar_menu {
     display: flex;
     align-items: center;
     list-style: none;
+    z-index: 999;
 }
   
 .navbar_item {
@@ -94,6 +97,11 @@
     color: #503d31;
     transition: all 0.3s ease;
 }
+
+.nav_img {
+  width: 2.0rem;
+  height: 2.0rem;
+ }
 
 @media screen and (max-width: 960px) {
 
@@ -171,13 +179,14 @@
       top: 20%;
       right: 5%;
       transform: translate(5%, 20%);
+      z-index: -1;
     }
   
     .navbar_toggle .bar {
       display: block;
       cursor: pointer;
     }
-  
+
     #mobile-menu.is-active .bar:nth-child(2) {
       opacity: 0;
     }
