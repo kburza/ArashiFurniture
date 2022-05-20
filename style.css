@@ -274,6 +274,7 @@
   }
 
   @media screen and (max-width: 768px) {
+    
     .home_container {
       padding: 0 0;
     }
@@ -800,6 +801,9 @@
     padding-bottom: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
+
+    width: 27rem;
+    height: 16rem;
   }
 
   @media screen and (max-width: 968px) {
@@ -809,6 +813,9 @@
       padding-bottom: 2.5rem;
       padding-left: 2.5rem;
       padding-right: 2.5rem;
+  
+      width: 19rem;
+      height: 12.75rem;
     }
 
     .footer_links {
