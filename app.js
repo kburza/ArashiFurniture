@@ -49,32 +49,40 @@ const highlightMenu = () => {
     }
 
   }
-
-  /*
-  else if(window.innerWidth < 960 && window.innerWidth >= 600) {
-
-    homeMenu.classList.remove('highlight');
-    galleryMenu.classList.remove('highlight');
-    aboutMenu.classList.remove('highlight');
-    contactMenu.classList.remove('highlight');
+  else if(window.innerWidth < 1400 && window.innerWidth >= 968) {
 
     if (scrollPos < 675) {
-      //null  
+      homeMenu.classList.add('highlight');
+      aboutMenu.classList.remove('highlight');
       return;
     } else if (scrollPos < 1880) {
-        faders.classList.add("appear");
+        aboutMenu.classList.add('highlight');
+        homeMenu.classList.remove('highlight');
+        galleryMenu.classList.remove('highlight');
+        contactMenu.classList.remove('highlight');
+
+      faders.classList.add("appear");
       return;
     } else if (scrollPos < 3200) {
-        faders1.classList.add("appear");
-        return;
+        galleryMenu.classList.add('highlight');
+        homeMenu.classList.remove('highlight');
+        aboutMenu.classList.remove('highlight');
+        contactMenu.classList.remove('highlight');
+    
+      faders1.classList.add("appear");
+      return;
     } else if (scrollPos < 20000) {
-        faders2.classList.add("appear");
-        return;
+        contactMenu.classList.add('highlight');
+        galleryMenu.classList.remove('highlight');
+        homeMenu.classList.remove('highlight');
+        aboutMenu.classList.remove('highlight');
+
+      faders2.classList.add("appear");
+      return;
     }
 
   }
-  */
-  else if(window.innerWidth >= 960) {
+  else if(window.innerWidth >= 1400) {
 
     if (scrollPos < 490) {
       homeMenu.classList.add('highlight');
