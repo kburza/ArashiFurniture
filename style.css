@@ -796,13 +796,19 @@
   }
   
   .about_img {
-    padding: 2rem 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   @media screen and (max-width: 968px) {
 
     .about_img {
-      padding: 2.5rem 2.5rem;
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
     }
 
     .footer_links {
