@@ -786,7 +786,15 @@
     color: rgb(0, 0, 0);
   }
   
-  @media screen and (max-width: 960px) {
+  .about_img {
+    padding: 2rem 2rem;
+  }
+
+  @media screen and (max-width: 968px) {
+
+    .about_img {
+      padding: 2.5rem 2.5rem;
+    }
 
     .footer_links {
       padding-top: 2rem;
