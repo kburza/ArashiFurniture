@@ -273,6 +273,10 @@
     border-bottom: 4px solid rgb(0, 0, 0);
   }
 
+  .highlight_fake {
+    border-bottom: 4px solid #f4e6d7;
+  }
+
   @media screen and (max-width: 768px) {
     
     .home_container {
