@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Arashi Art | General Gallery</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
     <link rel="shortcut icon" type="image/png" href="favicon.png"/>
 
 </head>
@@ -49,49 +50,53 @@
     <!-- Gallery Section -->
     <div class="home" id="home">
 
-        <div class="home_container fade-in_static">
+        <div class="home_container container swiper-container">
             <p class="home_description">Gallery</p>
             <p style="opacity:0">.</p>
             <p style="opacity:0">.</p>
             <p style="opacity:0">.</p>
             <p style="opacity:0">.</p>
 
-        <img style="width:80%; padding-top:1rem; padding-bottom:3rem" src="pics/1.jpg" alt="Table 1">
-        <img style="width:80%; padding-bottom:3rem" src="pics/2.jpg" alt="Table 2">
-        <img style="width:80%; padding-bottom:3rem" src="pics/3.jpg" alt="Table 3">
-        <img style="width:80%; padding-bottom:3rem" src="pics/4.jpg" alt="Table 4">
-        <img style="width:80%; padding-bottom:3rem" src="pics/5.jpg" alt="Table 5">
-        <img style="width:80%; padding-bottom:3rem" src="pics/6.jpg" alt="Table 6">
-        <img style="width:80%; padding-bottom:3rem" src="pics/7.jpg" alt="Table 7">
-        <img style="width:80%; padding-bottom:3rem" src="pics/8.jpg" alt="Table 8">
-        <img style="width:80%; padding-bottom:3rem" src="pics/9.jpg" alt="Table 9">
-        <img style="width:80%; padding-bottom:3rem" src="pics/10.jpg" alt="Table 10">
-        <img style="width:80%; padding-bottom:3rem" src="pics/11.jpg" alt="Table 11">
-        <img style="width:80%; padding-bottom:3rem" src="pics/12.jpg" alt="Table 12">
-        <img style="width:80%; padding-bottom:3rem" src="pics/13.jpg" alt="Table 13">
-        <img style="width:80%; padding-bottom:3rem" src="pics/14.jpg" alt="Table 14">
-        <img style="width:80%; padding-bottom:3rem" src="pics/15.jpg" alt="Table 15">
-        <img style="width:80%; padding-bottom:3rem" src="pics/16.jpg" alt="Table 16">
-        <img style="width:80%; padding-bottom:3rem" src="pics/17.jpg" alt="Table 17">
-        <img style="width:80%; padding-bottom:3rem" src="pics/18.jpg" alt="Table 18">
-        <img style="width:80%; padding-bottom:3rem" src="pics/19.jpg" alt="Table 19">
-        <img style="width:80%; padding-bottom:3rem" src="pics/20.jpg" alt="Table 20">
-        <img style="width:80%; padding-bottom:3rem" src="pics/21.jpg" alt="Table 21">
-        <img style="width:80%; padding-bottom:3rem" src="pics/22.jpg" alt="Table 22">
-        <img style="width:80%; padding-bottom:3rem" src="pics/23.jpg" alt="Table 23">
-        <img style="width:80%; padding-bottom:3rem" src="pics/24.jpg" alt="Table 24">
-        <img style="width:80%; padding-bottom:3rem" src="pics/25.jpg" alt="Table 25">
-        <img style="width:80%; padding-bottom:3rem" src="pics/26.jpg" alt="Table 26">
-        <img style="width:80%; padding-bottom:3rem" src="pics/27.jpg" alt="Table 27">
-        <img style="width:80%; padding-bottom:3rem" src="pics/28.jpg" alt="Table 28">
-        <img style="width:80%; padding-bottom:3rem" src="pics/29.jpg" alt="Table 29">
-        <img style="width:80%; padding-bottom:3rem" src="pics/30.jpg" alt="Table 30">
-        <img style="width:80%; padding-bottom:3rem" src="pics/31.jpg" alt="Table 31">
-        <img style="width:80%; padding-bottom:3rem" src="pics/32.jpg" alt="Table 32">
-        <img style="width:80%; padding-bottom:3rem" src="pics/33.jpg" alt="Table 33">
-        <img style="width:80%; padding-bottom:3rem" src="pics/34.jpg" alt="Table 34">
-        <img style="width:80%; padding-bottom:3rem" src="pics/35.jpg" alt="Table 35">
+          <div class="swiper-wrapper">
 
+            <div class="gallery_content swiper-slide">
+              <img class="gallery_img" style="width:80%;" src="pics/1.jpg" alt="">
+            </div>
+            <div class="gallery_content swiper-slide">
+              <img class="gallery_img" style="width:80%;" src="pics/2.jpg" alt="">
+            </div>
+            <div class="gallery_content swiper-slide">
+              <img class="gallery_img" style="width:80%;" src="pics/3.jpg" alt="">
+            </div>
+            <div class="gallery_content swiper-slide">
+              <img class="gallery_img" style="width:80%;" src="pics/4.jpg" alt="">
+            </div>
+
+            <!--
+            <img style="width:80%; padding-top:1rem; padding-bottom:3rem" src="pics/1.jpg" alt="Table 1">
+            <img style="width:80%; padding-bottom:3rem" src="pics/2.jpg" alt="Table 2">
+            <img style="width:80%; padding-bottom:3rem" src="pics/3.jpg" alt="Table 3">
+            <img style="width:80%; padding-bottom:3rem" src="pics/4.jpg" alt="Table 4">
+            <img style="width:80%; padding-bottom:3rem" src="pics/5.jpg" alt="Table 5">
+            <img style="width:80%; padding-bottom:3rem" src="pics/6.jpg" alt="Table 6">
+            <img style="width:80%; padding-bottom:3rem" src="pics/7.jpg" alt="Table 7">
+            <img style="width:80%; padding-bottom:3rem" src="pics/8.jpg" alt="Table 8">
+            <img style="width:80%; padding-bottom:3rem" src="pics/9.jpg" alt="Table 9">
+            <img style="width:80%; padding-bottom:3rem" src="pics/10.jpg" alt="Table 10">
+            <img style="width:80%; padding-bottom:3rem" src="pics/11.jpg" alt="Table 11">
+            <img style="width:80%; padding-bottom:3rem" src="pics/12.jpg" alt="Table 12">
+            <img style="width:80%; padding-bottom:3rem" src="pics/13.jpg" alt="Table 13">
+            <img style="width:80%; padding-bottom:3rem" src="pics/14.jpg" alt="Table 14">
+            <img style="width:80%; padding-bottom:3rem" src="pics/15.jpg" alt="Table 15">
+            <img style="width:80%; padding-bottom:3rem" src="pics/16.jpg" alt="Table 16">
+            <img style="width:80%; padding-bottom:3rem" src="pics/17.jpg" alt="Table 17">
+            <img style="width:80%; padding-bottom:3rem" src="pics/18.jpg" alt="Table 18">
+            <img style="width:80%; padding-bottom:3rem" src="pics/19.jpg" alt="Table 19">
+            <img style="width:80%; padding-bottom:3rem" src="pics/20.jpg" alt="Table 20">
+            <img style="width:80%; padding-bottom:3rem" src="pics/21.jpg" alt="Table 21">
+            -->
+
+          </div>
           <!--
             <div class="main-scroll-div">
             <button class="icon" onclick="scroll_img_left()"><i class="fa fa-caret-left" aria-hidden="true"></i></button>
@@ -109,7 +114,18 @@
             </div>
             -->
 
-        </div>
+      <!--==================== ARROWS ====================-->
+      <div class="swiper-button-next">
+        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+      </div>
+      <div class="swiper-button-prev">
+        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+      </div>
+                    
+      <!--==================== PAGINATION ====================-->
+      <div class="swiper-pagination"></div>
+
+    </div>
 
     </div>
   
@@ -181,7 +197,7 @@
         </section>
       </div>
 
-    <script src="app_gallery.js"></script>
+    <script src="gallery.js"></script>
     <script src="https://kit.fontawesome.com/ac91786b18.js" crossorigin="anonymous"></script>
     
     <!--
@@ -198,7 +214,7 @@
     -->
 
     <!--==================== SWIPER JS ====================-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="swiper-bundle.min.js"></script>
 
 </body>
 </html>
