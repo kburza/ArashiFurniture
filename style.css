@@ -801,25 +801,15 @@
   }
   
   .about_img {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-
-    width: 27rem;
-    height: 16rem;
+    width: 40rem;
+    height: 40rem;
   }
 
   @media screen and (max-width: 968px) {
 
     .about_img {
-      padding-top: 2.5rem;
-      padding-bottom: 2.5rem;
-      padding-left: 2.5rem;
-      padding-right: 2.5rem;
-  
-      width: 19rem;
-      height: 12.75rem;
+      width: 40rem;
+      height: 40rem;
     }
 
     .footer_links {
