@@ -190,6 +190,7 @@ sliders.forEach(slider => {
 
 /*==================== PORTFOLIO SWIPER  ====================*/
 let swiper = new Swiper('.portfolio__container', {
+  lazy: true,
   cssMode: true,
   loop: true,
 

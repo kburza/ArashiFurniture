@@ -59,7 +59,7 @@
 
             <div class="swiper-slide">
               <div class="swiper-zoom-container">
-                <img src="pics/35.jpg"/>
+                <img src="pics/35.jpg" class="swiper-lazy"/>
               </div>
             </div>
 
@@ -125,6 +125,7 @@
     <script>
       var swiper = new Swiper(".mySwiper", {
         lazy: true,
+        loop: true,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
